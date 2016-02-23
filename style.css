@@ -1,0 +1,41 @@
+body{
+  background: #fafafa url("assets/img/noise.png") repeat;
+}
+.center{
+  text-align: center;
+}
+/*
+HEADER STYLE
+*/
+header{
+  color: black;
+}
+header .nav-image-wrapper{
+  margin: 40px auto;
+}
+.ginny-name{
+  font-size: 20px;
+  color: black;
+}
+
+#ginny-img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+.nav-list{
+  color: black;
+}
+.nav-list li{
+  text-align: center;
+}
+
+
+/*
+MAIN STYLE
+*/
+.main{
+  min-height: 100%;
+  width: 100%;
+}
