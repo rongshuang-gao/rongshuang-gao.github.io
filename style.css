@@ -1,29 +1,62 @@
+/**************
+
+***************/
+
+/**************
+  NAVGATION OFFSET
+***************/
+header, .main, footer {
+  padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, .main, footer {
+    padding-left: 0;
+  }
+}
+/**************
+RESET
+***************/
 body{
   background: #fafafa url("assets/img/noise.png") repeat;
 }
 .center{
   text-align: center;
 }
-/*
-HEADER STYLE
-*/
+.lighter{
+  font-weight: lighter;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.bold{
+  font-weight: bold;
+}
+/**************
+HEADER & NAV
+***************/
 header{
   color: black;
 }
 header .nav-image-wrapper{
   margin: 40px auto;
 }
-.ginny-name{
-  font-size: 20px;
-  color: black;
-}
-
 #ginny-img{
   width: 100px;
   height: 100px;
   display: block;
   margin: auto;
 }
+.ginny-name{
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+}
+.objective{
+  width: 80%;
+  margin: auto;
+}
+
 .nav-list{
   color: black;
 }
@@ -31,11 +64,28 @@ header .nav-image-wrapper{
   text-align: center;
 }
 
-
-/*
-MAIN STYLE
-*/
+/**************
+MAIN
+***************/
 .main{
   min-height: 100%;
   width: 100%;
+}
+section.main-section{
+  width: 80%;
+  margin: 20px auto;
+  /*border: 1px solid black;*/
+}
+.title-and-contact{
+  font-size: 0.8em;
+}
+.feature-list li{
+  list-style-type: disc!important;
+  margin-left: 20px;
+}
+.card.large{
+  height: auto!important;
+}
+.card.large .card-action{
+  position: relative!important;
 }

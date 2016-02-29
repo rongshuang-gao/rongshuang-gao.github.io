@@ -12,26 +12,185 @@
   </head>
   <body>
     <header>
-      <nav class="side-nav fixed" style="width:240px;">
+      <div id="slide-out" class="side-nav fixed">
         <div class="nav-image-wrapper center">
           <img src="assets/img/ginny.jpg" alt="ginny" class="circle center" id="ginny-img">
-          <span class="ginny-name">Rongshuang Gao</span>
+          <div class="ginny-name">Rongshuang Gao</div>
         </div>
-        <ul class="nav-list">
-          <li>About</li>
-          <li>Work</li>
-          <li>Contact</li>
+        <div class="objective">
+          <!-- <span class="center">
+            Actively looking for a job.
+          </span> -->
+        </div>
+        <ul class="center">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#work">Contact</a></li>
         </ul>
+      </div>
+      <nav class="hide-on-large-only">
+        <div class="container">
+          <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="large mdi-navigation-menu"></i>
+          </a>
+        </div>
       </nav>
     </header>
     <div class="main">
       <div class="content-wrapper">
-        <div class="content">
-          <h1>Rongshuang Gao</h1>
-        </div>
+        <!-- Name & Title -->
+        <section class="center main-section scrollspy" id="about">
+          <h3 class="uppercase">Rongshuang Gao</h3>
+          <span class="lighter uppercase title-and-contact">
+            fonr end developer / software engineer
+            <br>
+            rongshuanggao@gmail.com | +1 917 456 2160
+            <br>
+            New York, United States
+          </span>
+          <br>
+        </section>
+        <div class="divider"></div>
+        <!-- PROFILE -->
+        <section class="main-section">
+          <div class="row">
+            <div class="col m3">
+              <h5>Profile</h5>
+            </div>
+            <div class="col m9">
+              <p>
+                Motivated and passionate programmer graduated from New York University School of Engineering.  Use Java primarily, and had 2 years website development experience with Ruby on Rails, HTML, CSS, JavaScript and Ajax. Familiar with popular front-end frameworks, MVC JS libraries and design principles. Solid knowledge on data structure and algorithms.
+              </p>
+              <p>
+                Seeking a full time position that involves web programming and general software development with a dynamic company that values great work ethics, creative thinking and strong team work.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- WORK -->
+        <section class="main-section scrollspy" id="work">
+          <div class="row">
+            <div class="col m3">
+              <h5>Work</h5>
+            </div>
+            <div class="col m9">
+              <!-- Cuckoo Kitchen -->
+              <div class="row">
+                <div class="card large">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="http://www.cuckookitchen.com">
+                      <img class="activator" src="assets/img/cuckookitchen.jpg">
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title grey-text text-darken-4">
+                      Cuckoo Kitchen eCommerce Website
+                    </span>
+                    <p>
+                      <span class="bold">Basic Features</span>
+                      <br>
+                      <ul class="feature-list">
+                        <li>Secure Sign up/Log in system with Facebook and Google+ log in.</li>
+                        <li>Well displayed line item index and detail.</li>
+                        <li>Smoothy checkout, secure payment, automatic remember shipping address.</li>
+                        <li>Automatic email order confirmation.</li>
+                        <li>Administration dashboard to display/update/modify order and user info.</li>
+                      </ul>
+                      <span class="bold">Advanced Features</span>
+                      <br>
+                      <ul class="feature-list">
+                        <li>Allow customer to view and order product for following days.</li>
+                        <li>Referral System.</li>
+                        <li>Accumulate and redeem store credit.</li>
+                        <li>Create and redeem unique gift card.</li>
+                        <li>Website visiting history and traffic monitoring.</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://www.cuckookitchen.com">www.cuckookichen.com</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Food Wheel -->
+              <div class="row">
+                <div class="card large">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="http://www.foodwheel.net">
+                      <img class="activator" src="assets/img/foodwheel.jpg">
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title grey-text text-darken-4">
+                      Food Wheel eCommerce Website
+                    </span>
+                    <p>
+                      <ul class="feature-list">
+                        <li>Secure Sign up/Log in system.</li>
+                        <li>Well displayed line item index and detail.</li>
+                        <li>Smoothy checkout, secure payment.</li>
+                        <li>Automatic email order confirmation.</li>
+                        <li>Shipping address verification.</li>
+                        <li>Support English and Chinese.</li>
+                        <li>Administration dashboard.</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://www.foodwheel.net">www.foodwheel.net</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- CONTACT -->
+        <section class="main-section scrollspy" id="contact">
+          <div class="row">
+            <div class="col m3">
+              <h5>Contact</h5>
+            </div>
+            <div class="col m9">
+              <form action="" >
+                <div class="row">
+                  <div class="col m6 s12 input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" id="icon_prefix" class="validate">
+                    <label for="icon_prefix">Name</label>
+                  </div>
+                  <div class="col m6 s12 input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="icon_email" class="validate">
+                    <label for="icon_email">Email</label>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 input-field">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea name="" id="icon_prefix2" rows="5" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix2">Message</label>
+                    </div>
+                  </div>
+                  <div class="center">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        $(".button-collapse").sideNav();
+      });
+    </script>
   </body>
 </html>
