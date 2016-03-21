@@ -1,16 +1,69 @@
 /**************
 
 ***************/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./assets/fonts/icomoon.eot?cu5d19');
+  src:  url('./assets/fonts/icomoon.eot?cu5d19#iefix') format('embedded-opentype'),
+        url('./assets/fonts/icomoon.ttf?cu5d19') format('truetype'),
+        url('./assets/fonts/icomoon.woff?cu5d19') format('woff'),
+        url('./assets/fonts/icomoon.svg?cu5d19#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: "\e901";
+}
+.icon-envelop:before {
+    content: "\e902";
+}
+.icon-github:before {
+    content: "\e909";
+}
+.icon-github2:before {
+    content: "\e90a";
+}
+.icon-github3:before {
+    content: "\e90b";
+}
+.icon-github4:before {
+    content: "\e90c";
+}
+.icon-linkedin:before {
+    content: "\e90e";
+}
+.icon-linkedin2:before {
+    content: "\e90f";
+}
 /**************
   NAVGATION OFFSET
 ***************/
-header, .main, footer {
+header,
+footer,
+.main {
   padding-left: 240px;
 }
 
 @media only screen and (max-width : 992px) {
-  header, .main, footer {
+  header,
+  footer,
+  .main {
     padding-left: 0;
   }
 }
@@ -32,6 +85,12 @@ body{
 .bold{
   font-weight: bold;
 }
+.link-inherit-color{
+  color: inherit;
+}
+.link-underline{
+  text-decoration: underline;
+}
 /**************
 HEADER & NAV
 ***************/
@@ -44,13 +103,13 @@ header .nav-image-wrapper{
 #ginny-img{
   width: 100px;
   height: 100px;
-  display: block;
   margin: auto;
+  display: block;
 }
 .ginny-name{
+  margin-top: 20px;
   font-size: 20px;
   color: black;
-  margin-top: 20px;
 }
 .objective{
   width: 80%;
@@ -74,14 +133,13 @@ MAIN
 section.main-section{
   width: 80%;
   margin: 20px auto;
-  /*border: 1px solid black;*/
 }
 .title-and-contact{
   font-size: 0.8em;
 }
 .feature-list li{
-  list-style-type: disc!important;
   margin-left: 20px;
+  list-style-type: disc!important;
 }
 .card.large{
   height: auto!important;
@@ -89,3 +147,38 @@ section.main-section{
 .card.large .card-action{
   position: relative!important;
 }
+
+.contact-list li{
+
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+
+.hover-effect {
+
+  display: inline-block;
+  vertical-align: middle;
+
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hover-effect:hover,
+.hover-effect:focus,
+.hover-effect:active {
+  -web-kit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
